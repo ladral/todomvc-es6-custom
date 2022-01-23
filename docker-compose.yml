@@ -2,12 +2,12 @@ version: "3.3"
 
 services:
   client:
-    image: ptuor/todomvc-client:latest
+    image: ladral/todomvc-client:latest
     networks:
       - todonet
 
   server:
-    image: ptuor/todomvc-java-server
+    image: ladral/todomvc-java-server
     networks:
       - todonet
     environment:
